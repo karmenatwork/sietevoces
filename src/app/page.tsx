@@ -1,6 +1,7 @@
 import ComingSoon from "@/components/coming-soon";
 import ComingSoonSection from "@/components/proximante";
 import AboutSection from "@/components/about-section";
+import VoicesSection from "@/components/voces-section";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <div className=" bg-[#FDF6E3] dark:bg-gray-900 transition-colors">
         <ComingSoon />
         <AboutSection />
+        <VoicesSection />
         <ComingSoonSection />
       </div>
     </>
