@@ -36,7 +36,7 @@ export async function seedBooks() {
     console.log('Seeding books...');
     
     for (const book of sampleBooks) {
-      await db.insert(books).values(book);
+      await db().insert(books).values(book);
       console.log(`Added book: ${book.title}`);
     }
     

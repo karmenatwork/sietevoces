@@ -4,7 +4,7 @@ import Card from '@/components/Card';
 
 async function getBooks() {
   try {
-    const allBooks = await db.select().from(books);
+    const allBooks = await db().select().from(books);
     return allBooks;
   } catch (error) {
     console.error('Error fetching books:', error);
