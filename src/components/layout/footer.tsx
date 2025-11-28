@@ -1,4 +1,4 @@
-import { FacebookIcon, InstagramIcon } from "./social-links";
+import { FacebookIcon, InstagramIcon } from "@/components/social-links";
 import Link from "next/link";
 
 export default function Footer() {
@@ -38,7 +38,7 @@ export default function Footer() {
               </Link>
             </div>
             <p className="text-xs text-white/60">
-              © 2025 7 Voces. Todos los derechos reservados.
+              &copy; {new Date().getFullYear()} 7 Voces. Todos los derechos reservados.
             </p>
             <span className="inline-flex items-center text-xs sm:text-xs opacity-80 justify-center">
               Made with ❤️ by Carmen de 7 Voces {" "}

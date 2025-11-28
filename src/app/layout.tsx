@@ -5,8 +5,8 @@ import { Geist, Geist_Mono, Cinzel, Jost } from "next/font/google";
 
 import { Suspense } from "react"
 import { ThemeProvider } from "@/components/theme-provider"
-import Header from "@/components/header"
-import Footer from "@/components/footer"
+import Header from "@/components/layout/header"
+import Footer from "@/components/layout/footer"
 
 
 import "./globals.css"
@@ -45,9 +45,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" suppressHydrationWarning>
-      <body 
+      <body
         className={`min-h-dvh  antialiased ${geistSans.variable} ${geistMono.variable} ${cinzel.variable} ${jost.variable}`}
-        >
+      >
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
           <div className="min-h-dvh flex flex-col bg-[#f8f8e3] text-[#023f5c] dark:bg-[#023f5c] dark:text-[#f8f8e3]">
             <Header />
