@@ -7,12 +7,12 @@ import Link from "next/link";
 import { SocialLinks } from "@/components/social-links";
 import { Button } from "@/components/ui/button";
 
-import ThemeToggle from "../theme-toggle";
+import ThemeToggle from "../ui/theme-toggle";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
-    <header className="sticky top-0 z-20 bg-[#f8f8e3]/80 backdrop-blur supports-[backdrop-filter]:bg-[#f8f8e3]/60 dark:bg-[#023f5c]/80 dark:supports-[backdrop-filter]:bg-[#023f5c]/60">
+    <header className="sticky top-0 z-20 bg-[var(--color-header-bg)] bg-opacity-80 backdrop-blur supports-[backdrop-filter]:bg-[var(--color-header-bg)]/80">
       <div className="container mx-auto flex items-center justify-between px-4 ">
         <Link
           href="/"
@@ -34,14 +34,13 @@ export default function Header() {
           aria-label="Primary"
           className="hidden md:flex items-center gap-2 sm:gap-3 justify-end px-4 py-2"
         >
-          {/* <ThemeToggle /> */}
-          <SocialLinks className="inline-flex h-9 w-9 text-orange hover:text-purple-700" />
-
+          <ThemeToggle />
+          <SocialLinks className="inline-flex h-9 w-9 text-accent hover:text-purple-700" />
         </nav>
 
         {/* Mobile Menu Button */}
         <div className="md:hidden">
-          {/* <ThemeToggle /> */}
+          <ThemeToggle />
           <Button
             variant="ghost"
             size="icon"
@@ -60,13 +59,13 @@ export default function Header() {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden border-t border-[#023f5c]/10 dark:border-white/10 bg-[#f8f8e3] dark:bg-[#023f5c]">
+        <div className="md:hidden border-t border-[var(--color-fg)]/10 bg-[var(--color-bg)]">
           <nav
             aria-label="Mobile navigation"
             className="container mx-auto px-6 py-4 space-y-3"
           >
             <div className="flex items-center justify-center gap-3 pt-2">
-              <SocialLinks className="inline-flex h-9 w-9 text-orange hover:text-purple-700" />
+              <SocialLinks className="inline-flex h-9 w-9 text-[var(--color-accent)] hover:text-purple-700" />
             </div>
           </nav>
         </div>
