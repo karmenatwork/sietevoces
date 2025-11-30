@@ -1,21 +1,21 @@
-import { FacebookIcon, InstagramIcon } from "@/components/social-links";
+import { FacebookIcon, InstagramIcon, TiktokIconLink, YouTubeIconLink } from "@/components/ui/social-links";
 import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#3C096C] dark:bg-gray-900 text-white py-2 transition-colors">
-      {/* <footer className=" bg-[#3C096C] text-white"> */}
+    // <footer className="bg-[#3C096C] dark:bg-gray-900 text-white py-2 transition-colors">
+    <footer className=" bg-[#3C096C] text-white">
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex flex-col items-center md:items-start gap-2">
             <div className="text-2xl font-bold bg-gradient-to-r from-[#FFC880] via-[#9D4EDD] to-[#FF9100] bg-clip-text text-transparent">
               7 Voces
             </div>
+
             <p className="text-sm text-white/80 text-center md:text-left">
-              Un podcast sobre crecimiento personal y transformación
+              Un podcast sobre crecimiento personal y transformación 🎙️
             </p>
           </div>
-
           <div className="flex flex-col items-center gap-4">
             <div className="flex items-center gap-6">
               <Link
@@ -36,9 +36,23 @@ export default function Footer() {
               >
                 <InstagramIcon className="w-6 h-6" />
               </Link>
+              <YouTubeIconLink
+                username="7vocesPodcast"
+                show={false}
+                className="text-white/70 text-gray-400 hover:text-[#FF9100] transition-colors"
+                aria-label="Youtube"
+              />
+              <TiktokIconLink
+                username="7vocesPodcast"
+                show={false}
+                className="text-white/70 text-gray-400 hover:text-[#FF9100] transition-colors"
+                aria-label="Tiktok"
+              />
+              {/* <SocialLinks className="inline-flex h-9 w-9 text-accent hover:text-purple-700" /> */}
+
             </div>
             <p className="text-xs text-white/60">
-              &copy; {new Date().getFullYear()} 7 Voces. Todos los derechos reservados.
+              &copy; {new Date().getFullYear()} - 7 Voces Podcast 🎙️. Todos los derechos reservados.
             </p>
             <span className="inline-flex items-center text-xs sm:text-xs opacity-80 justify-center">
               Made with ❤️ by Carmen de 7 Voces {" "}

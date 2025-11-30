@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Menu, X } from "@deemlol/next-icons";
 import Link from "next/link";
 
-import { SocialLinks } from "@/components/social-links";
+import { SocialLinks } from "@/components/ui/social-links";
 import { Button } from "@/components/ui/button";
 
 import ThemeToggle from "../ui/theme-toggle";
