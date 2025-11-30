@@ -1,6 +1,7 @@
 import ComingSoon from "@/components/coming-soon";
 import ComingSoonSection from "@/components/proximante";
 import AboutSection from "@/components/about-section";
+
 export default function Home() {
   return (
     <>

@@ -49,7 +49,7 @@ export default function RootLayout({
         className={`min-h-dvh  antialiased ${geistSans.variable} ${geistMono.variable} ${cinzel.variable} ${jost.variable}`}
       >
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
-          <div className="min-h-dvh flex flex-col bg-[#f8f8e3] text-[#023f5c] dark:bg-[#023f5c] dark:text-[#f8f8e3]">
+          <div className="min-h-dvh flex flex-col bg-[#f8f8e3] dark:bg-[#023f5c] dark:text-[#f8f8e3]">
             <Header />
             <Suspense fallback={null}>{children}</Suspense>
             <Footer />

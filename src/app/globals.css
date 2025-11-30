@@ -4,19 +4,37 @@
    Design Tokens – Light & Dark Mode
    --------------------------------------------------- */
 :root {
+  --accent: #FF9100;
+  --accent-foreground: #FFC880;
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.2 0.05 280);
+  --primary: #3C096C;
+  --primary-foreground: oklch(0.98 0.01 280);
+  --secondary: #FFC880;
+  --secondary-foreground: oklch(0.98 0.01 280);
+  --muted: #edeef5;
+  --muted-foreground: #5d6080;
+  --accent: #e26500;
+
+  --ring: oklch(0.4 0.15 290);
+
   /* Light theme */
   --color-bg: #ffffff;
+  --color-section-bg: #f7f8ff;
   /* page background */
   --color-header-bg: #f8f8e3;
   /* header background */
   --color-fg: #050505;
   /* text color */
-  --color-primary: #FFC880;
-  --color-secondary: #9D4EDD;
-  --color-accent: #FF9100;
+
+  --color-primary: var(--primary);
+  --color-secondary: var(--primary-foreground);
+  --color-accent: var(--accent);
   /* accent color */
   --color-heading: #3C096C;
   --color-main-content: #5A189A;
+
+  --color-ring: var(--ring);
 
   /* heading color for light mode */
   --font-sans: "Inter", system-ui, sans-serif;
@@ -25,7 +43,15 @@
 /* Dark mode – media query and .dark class */
 @media (prefers-color-scheme: dark) {
   :root {
+    --primary: #8267e2;
+    --primary-foreground: oklch(0.15 0.02 280);
+    --secondary: #fb6e00;
+    --secondary-foreground: #090a13;
+    --muted: #20212b;
+    --muted-foreground: #898cae;
     --color-bg: #050505;
+    --color-section-bg: #090a13;
+    --color-header-bg: #f8f8e3;
     --color-fg: #ffffff;
     --color-primary: #FFC880;
     --color-secondary: #9D4EDD;
@@ -36,6 +62,13 @@
 
 /* Very dark header + dark heading */
 .dark {
+  --primary: #8267e2;
+  --primary-foreground: #090a13;
+  --muted: oklch(0.25 0.02 280);
+  --muted-foreground: oklch(0.65 0.05 280);
+  --accent: #FF9100;
+
+  --color-section-bg: #090a13;
   --color-header-bg: #010e14;
   /* very dark header */
   --color-bg: #050505;
@@ -52,7 +85,9 @@
    --------------------------------------------------- */
 body {
   background: var(--color-bg);
-  color: var(--color-fg);
+  /* color: var(--color-fg); */
+  color: var(--color-main-content);
+  /* color: var(--muted-foreground); */
   font-family: var(--font-sans);
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -67,24 +102,28 @@ body {
     background-color: var(--color-primary);
   }
 
-  .text-primary {
-    color: var(--color-primary);
-  }
-
   .bg-secondary {
     background-color: var(--color-secondary);
-  }
-
-  .text-secondary {
-    color: var(--color-secondary);
   }
 
   .bg-accent {
     background-color: var(--color-accent);
   }
 
+  .text-primary {
+    color: var(--color-primary);
+  }
+
+  .text-secondary {
+    color: var(--color-secondary);
+  }
+
   .text-accent {
     color: var(--color-accent);
+  }
+
+  .text-heading {
+    color: var(--color-heading);
   }
 }
 
