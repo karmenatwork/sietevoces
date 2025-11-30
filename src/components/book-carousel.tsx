@@ -24,7 +24,7 @@ const books = [
     borderColor: "#FFC880",
     accentColor: "#FF9100",
   },
-    {
+  {
     id: 3,
     title: "The Let Them Theory",
     author: "Mel Robbins",
@@ -112,9 +112,10 @@ export function BookCarousel() {
           <button
             key={index}
             onClick={() => setCurrent(index)}
-            className={`w-2 h-2 rounded-full transition-all ${
-              index === current ? "bg-[#FF9100] w-8" : "bg-gray-300 dark:bg-gray-600"
-            }`}
+            className={`
+              w-2 h-2 rounded-full transition-all 
+              ${index === current ? "bg-[#FF9100] w-8" : "bg-gray-300"}
+              dark:bg-gray-600`}
             aria-label={`Ir al libro ${index + 1}`}
           />
         ))}

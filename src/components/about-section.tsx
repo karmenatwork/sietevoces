@@ -16,7 +16,7 @@ export default function AboutSection() {
             <br />
           </p>
           <p className="text-center text-[var(--color-main-content)] font-medium md:text-xl font-jost ">
-            Hoy somos <strong className="text-[var(--color-accent)]">7 Voces</strong>,un espacio donde compartimos aprendizajes reales,
+            Hoy somos <strong className="text-[var(--color-accent)]">7 Voces</strong>, un espacio donde compartimos aprendizajes reales,
             con corazón y autenticidad. Y queremos compartirlo contigo.{" "}
           </p>
 
