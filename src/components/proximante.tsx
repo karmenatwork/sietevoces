@@ -2,12 +2,12 @@ export default function ComingSoonSection() {
   return (
     <section className="py-20 px-4 bg-gradient-to-br from-[#3C096C] to-[#5A189A] text-white">
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-4xl md:text-5xl font-bold mb-8">Próximamente</h2>
-        <p className="text-sm md:text-2xl mb-12 text-purple-100">
+        <h2 className="text-4xl md:text-5xl font-bold mb-8">Lanzamiento – 8 de enero 2026</h2>
+        <p className="text-md md:text-xl mb-12 text-purple-100">
           Estamos preparando algo especial. Un espacio donde compartiremos nuestras reflexiones, aprendizajes y conversaciones sobre los libros que nos inspiran.
         </p>
 
-        <div className="flex  justify-center gap-6 text-center">
+        <div className="flex justify-center gap-6 text-center px-20 md:px-8">
           <div className="flex flex-col items-center">
             <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-4">
               <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
@@ -15,8 +15,8 @@ export default function ComingSoonSection() {
                 <path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z" />
               </svg>
             </div>
-            <h3 className="text-xl font-semibold mb-2">Conversaciones Auténticas</h3>
-            <p className="text-purple-200">Sin guiones, solo reflexiones reales</p>
+            <h3 className="text-md md:text-xl font-semibold mb-2">Conversaciones Auténticas</h3>
+            <p className="text-sm md:text-md text-purple-200">Sin guiones, solo reflexiones reales</p>
           </div>
 
           <div className="flex flex-col items-center">
@@ -25,8 +25,8 @@ export default function ComingSoonSection() {
                 <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
               </svg>
             </div>
-            <h3 className="text-xl font-semibold mb-2">Crecimiento Personal</h3>
-            <p className="text-purple-200">Herramientas prácticas para nuestra vida diaria</p>
+            <h3 className="text-md md:text-xl font-semibold mb-2">Crecimiento Personal</h3>
+            <p className="text-sm md:text-md text-purple-200">Herramientas prácticas para nuestra vida diaria</p>
           </div>
 
           <div className="flex flex-col items-center">
@@ -36,7 +36,7 @@ export default function ComingSoonSection() {
               </svg>
             </div>
             <h3 className="text-xl font-semibold mb-2">Amistad</h3>
-            <p className="text-purple-200"> 7 diferentes perspectivas que terminaron en amistad</p>
+            <p className="text-sm md:text-md text-purple-200"> 7 diferentes perspectivas que terminaron en amistad</p>
           </div>
         </div>
       </div>

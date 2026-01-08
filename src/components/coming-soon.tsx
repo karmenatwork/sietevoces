@@ -87,11 +87,11 @@ export default function ComingSoon() {
 
             </h1>
             {/* Coming Soon Badge */}
-            <div className="inline-block">
+            {/* <div className="inline-block">
               <div className="px-6 py-3 rounded-full bg-gradient-to-r from-[#5A189A] to-[#9D4EDD] text-white font-semibold text-lg shadow-lg">
-                Próximamente
+                Lanzamiento – 8 de enero 2026
               </div>
-            </div>
+            </div> */}
 
             <PhraseCarousel currentIndex={currentPhraseIndex} />
 
